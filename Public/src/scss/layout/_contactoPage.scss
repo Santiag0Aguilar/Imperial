@@ -1,0 +1,64 @@
+@use "global/var" as v;
+@use "global/mixins" as m;
+
+.ContactoMain {
+  margin-top: 2rem;
+  h2 {
+    text-align: center;
+  }
+}
+
+.contacto__Page {
+  margin-top: 4rem;
+  @include m.desktop {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
+
+  .contacto_Page__text {
+    p {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.Contacto {
+  h1,
+  h3 {
+    text-align: center;
+  }
+  h3 {
+    font-weight: normal;
+  }
+  img {
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.Formulario__Contacto {
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    input {
+      padding: 1rem;
+    }
+    input,
+    textarea {
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      border: 1px solid #e1e1e1;
+      background-color: #fff;
+    }
+    margin-bottom: 2rem;
+
+    select {
+      padding: 1rem;
+      border-radius: 10px;
+      border: 1px solid #e1e1e1;
+      background-color: #fff;
+      margin-bottom: 2rem;
+    }
+  }
+}

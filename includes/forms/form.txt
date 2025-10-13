@@ -1,0 +1,41 @@
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Usuario</title>
+</head>
+
+<body>
+    <h2>Formulario de Registro</h2>
+
+    <?php foreach ($Errores as $Error): ?>
+        <p> <?php echo $Error; ?></p>
+    <?php endforeach; ?>
+
+    <form id="formRegistro" method="POST">
+        <label>Nombre de usuario:</label><br>
+        <input type="text" name="nombre" value="<?php echo $Nombre_Usuario; ?>"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="correo" value="<?php echo $Correo_Asociado; ?>"><br><br>
+
+        <label>Numero:</label><br>
+        <input type="tel" name="telefono" value="<?php echo $Numero_Asociado; ?>"><br><br>
+
+        <label>Contraseña:</label><br>
+        <input type="password" name="password"><br><br>
+
+        <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>" style="display:none;">
+        <input type="hidden" value="cliente" name="rol">
+
+        <button type="submit">Registrarse</button>
+    </form>
+
+
+
+</body>
+
+</html>

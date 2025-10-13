@@ -1,0 +1,35 @@
+@use "global/var" as v;
+@use "global/mixins" as m;
+
+.Session__Account {
+  .Cuenta__Usuario--Logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    @include m.desktop {
+      flex-direction: row;
+    }
+    .correo {
+      font-size: 12px;
+    }
+  }
+}
+.Cuenta__Usuario--Logo {
+  .iniciales {
+    background-color: v.$SmokeWhite;
+    padding: 1rem;
+    border-radius: 80%;
+    font-size: 11px;
+    text-align: center;
+    line-height: 1;
+    color: #000;
+    width: fit-content;
+    font-weight: bold;
+  }
+}
+
+.Sin__Cuenta {
+  display: flex;
+  color: #4197e7;
+}

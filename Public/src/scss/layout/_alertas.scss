@@ -1,0 +1,14 @@
+@use "global/var" as v;
+@use "global/mixins" as m;
+
+body {
+  position: relative;
+}
+.alertas {
+  position: absolute;
+  top: 38rem;
+  .alerta {
+    background-color: #333;
+    padding: 1rem;
+  }
+}

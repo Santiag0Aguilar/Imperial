@@ -1,0 +1,32 @@
+@use "global/var" as v;
+@use "global/mixins" as m;
+
+.Boton-1 {
+  @include m.btn(v.$DarkRoyalBlue, v.$SmokeWhite, inline);
+  border: none;
+}
+
+.Boton-2 {
+  margin-top: 4rem;
+  @include m.btn(v.$SoftGold, v.$SmokeWhite, inline);
+  border: none;
+  background-color: v.$SoftGold;
+  color: v.$SmokeWhite;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+}
+/* Contenedor del botón de PayPal con aspecto estilizado */
+#paypal-button-container {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+/* Efecto hover sobre el área del botón */
+#paypal-button-container:hover {
+  transform: scale(1.02);
+}

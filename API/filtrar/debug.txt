@@ -1,0 +1,9 @@
+Array
+(
+    [generos] => []
+    [marca] => 0
+    [orden] => 2
+    [precio_min] => 0
+    [precio_max] => 8000
+    [categoria] => perfume
+)

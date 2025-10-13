@@ -1,0 +1,21 @@
+@use "global/var" as v;
+@use "global/mixins" as m;
+
+.swiper {
+  width: 100%;
+  height: 37rem; /* Ajusta según necesidad */
+}
+
+.swiper-slide {
+  background: #f4f4f4;
+  img {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

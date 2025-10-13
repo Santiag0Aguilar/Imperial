@@ -1,0 +1,40 @@
+@use "global/var" as v;
+@use "global/mixins" as m;
+
+.Favoritos {
+  h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-family: v.$fuenteCursiva;
+    font-size: 4rem;
+  }
+
+  .Favorito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .nombre {
+      font-family: v.$fuenteCursiva;
+      font-size: 3rem;
+      text-align: center;
+    }
+    .precios {
+      font-size: 1.6rem;
+    }
+  }
+}
+.precio-normal {
+  text-decoration: line-through;
+
+  opacity: 0.5;
+}
+.visual__content {
+  position: relative;
+  .descuento {
+    position: absolute;
+    background-color: v.$DarkRoyalBlue;
+    color: v.$SmokeWhite;
+    padding: 1rem;
+    opacity: 0.8;
+  }
+}

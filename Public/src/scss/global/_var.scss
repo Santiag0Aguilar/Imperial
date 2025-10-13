@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+
+$fuenteCursiva: "Tangerine", cursive;
+
+$FontFamily: "Roboto", sans-serif;
+// Primary dark blue – ideal for headers, navbar backgrounds, and main sections
+$DarkRoyalBlue: #0b2c51;
+
+// Elegant gold – perfect for call-to-action buttons, accents, icons, and borders
+$SoftGold: #d4af37;
+
+// Clean off-white – use for section backgrounds, product cards, or to create contrast with dark elements
+$SmokeWhite: #f5f5f5;
+
+// Neutral slate gray – good for paragraph text, price tags, and subtle dividers
+$SlateGray: #708090;
+
+// Deep charcoal – strong choice for main text, titles, dark backgrounds, or footer areas
+$CharcoalBlack: #1c1c1c;
+$Green: #4caf50;
+$Red: #fa0c0c;
+// BG DARK_MODE
+$bgDarkMode: #1a1a1a;
+// Medidas de los dispositivos
+$telefono: 480px;
+$tablet: 768px;
+$desktop: 992px;
+$desktopXL: 1200px;

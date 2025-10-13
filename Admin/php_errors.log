@@ -1,0 +1,20 @@
+[16-Apr-2025 20:51:04 UTC] PHP Warning:  include_once(../config.php): Failed to open stream: No such file or directory in C:\apache\htdocs\Perfumeria\Admin\index.php on line 2
+[16-Apr-2025 20:51:04 UTC] PHP Warning:  include_once(): Failed opening '../config.php' for inclusion (include_path='.;C:\php\pear') in C:\apache\htdocs\Perfumeria\Admin\index.php on line 2
+[16-Apr-2025 20:51:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function db() in C:\apache\htdocs\Perfumeria\Admin\index.php:3
+Stack trace:
+#0 {main}
+  thrown in C:\apache\htdocs\Perfumeria\Admin\index.php on line 3
+[16-Apr-2025 20:55:13 UTC] PHP Warning:  Undefined variable $pdo in C:\apache\htdocs\Perfumeria\Admin\index.php on line 7
+[16-Apr-2025 20:55:13 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\apache\htdocs\Perfumeria\Admin\index.php:7
+Stack trace:
+#0 {main}
+  thrown in C:\apache\htdocs\Perfumeria\Admin\index.php on line 7
+[16-Apr-2025 20:59:24 UTC] PHP Warning:  Undefined array key "id" in C:\apache\htdocs\Perfumeria\Admin\index.php on line 18
+[16-Apr-2025 20:59:24 UTC] PHP Warning:  Undefined array key "id" in C:\apache\htdocs\Perfumeria\Admin\index.php on line 18
+[16-Apr-2025 20:59:24 UTC] PHP Warning:  Undefined array key "id" in C:\apache\htdocs\Perfumeria\Admin\index.php on line 18
+[16-Apr-2025 23:02:35 UTC] PHP Warning:  Undefined array key "Id" in C:\apache\htdocs\Perfumeria\Admin\index.php on line 11
+[16-Apr-2025 23:10:07 UTC] PHP Warning:  error_log(../logs/error.log): Failed to open stream: No such file or directory in C:\apache\htdocs\Perfumeria\Admin\index.php on line 25
+[16-Apr-2025 23:10:25 UTC] PHP Warning:  error_log(../logs/error.log): Failed to open stream: No such file or directory in C:\apache\htdocs\Perfumeria\Admin\index.php on line 25
+[17-Apr-2025 17:25:47 UTC] PHP Warning:  Undefined array key "Rol_Usuario" in C:\apache\htdocs\Perfumeria\includes\function.php on line 7
+[17-Apr-2025 17:26:32 UTC] PHP Warning:  Undefined array key "Rol_Usuario" in C:\apache\htdocs\Perfumeria\includes\function.php on line 7
+[06-May-2025 21:29:01 UTC] PHP Warning:  Undefined array key "Rol_Usuario" in C:\apache\htdocs\Perfumeria\includes\function.php on line 8

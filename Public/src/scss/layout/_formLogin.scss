@@ -1,0 +1,56 @@
+@use "global/var" as v;
+@use "global/mixins" as m;
+
+.Login {
+  margin-top: 4rem;
+  .main__container {
+    h2 {
+      text-align: center;
+    }
+  }
+}
+.Form__Login {
+  color: #333;
+  fieldset {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid #333;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    label {
+      text-transform: uppercase;
+    }
+
+    input {
+      background-color: v.$SmokeWhite;
+      padding: 0.5rem;
+      border: 1px solid #333;
+      border-radius: 5px;
+      margin-bottom: 2rem;
+    }
+    .BotonInicioSesion {
+      @include m.btn(v.$Green, v.$SmokeWhite, block);
+      border: none;
+      font-weight: bold;
+      @include m.desktop {
+        width: 10%;
+      }
+    }
+    p {
+      a {
+        color: #4197e7;
+      }
+    }
+  }
+}
+
+.error-messages {
+  .Error {
+    background-color: #ee3333;
+    color: #fff;
+    padding: 0.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+}

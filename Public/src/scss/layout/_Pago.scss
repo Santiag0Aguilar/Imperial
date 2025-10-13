@@ -1,0 +1,10 @@
+@use "global/var" as v;
+@use "global/mixins" as m;
+
+.Pago__Contenedor {
+  @include m.desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+}

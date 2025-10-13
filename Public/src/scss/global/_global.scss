@@ -1,0 +1,89 @@
+@use "global/var" as v;
+@use "global/mixins" as m;
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: v.$SmokeWhite;
+  font-family: v.$FontFamily;
+}
+
+.content {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: v.$CharcoalBlack;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 2.9rem;
+}
+h4 {
+  font-size: 2.5rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+.Logo {
+  font-weight: 400;
+  color: v.$SmokeWhite;
+  .LogoSpan {
+    font-weight: bold;
+    color: v.$SoftGold;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.resaltar {
+  font-weight: bold;
+}
+
+.precio {
+  color: v.$Green;
+}
+
+.centrar-texto {
+  text-align: center;
+}
+
+.meta-dato {
+  font-weight: bold;
+  color: v.$Green;
+  font-size: 2rem;
+}

@@ -1,0 +1,31 @@
+@use "global/var" as v;
+@use "global/mixins" as m;
+
+.publicidad {
+  margin-top: 10rem;
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: v.$fuenteCursiva;
+    font-size: 4rem;
+  }
+  .anuncios {
+    display: flex;
+    flex-direction: column;
+    @include m.desktop {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  a {
+    margin-bottom: 4rem;
+    img {
+      height: 40rem;
+      width: 1545px;
+      @include m.desktop {
+        object-fit: contain;
+        max-height: 60rem;
+      }
+    }
+  }
+}

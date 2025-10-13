@@ -1,0 +1,132 @@
+@use "global/var" as v;
+@use "global/mixins" as m;
+.DarkModeAndNav {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  @include m.desktop {
+    align-items: end;
+  }
+}
+.dark-mode {
+  width: 5rem;
+  filter: invert(100%);
+}
+
+.Dark__Mode--Active {
+  background-color: v.$bgDarkMode;
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    color: v.$SmokeWhite;
+    &.Sin__Cuenta--texto {
+      color: #4197e7;
+    }
+  }
+  tbody {
+    tr {
+      td {
+        color: v.$SmokeWhite;
+      }
+    }
+  }
+  .Formulario__Contacto {
+    fieldset {
+      color: v.$SmokeWhite;
+      input,
+      textarea,
+      select {
+        background-color: #333;
+        border: 1px solid #e1e1e1;
+        color: v.$SmokeWhite;
+      }
+      select {
+        color: v.$SlateGray;
+      }
+    }
+  }
+  .precio {
+    color: v.$Green;
+  }
+
+  .Favorito {
+    background-color: #333;
+  }
+
+  .Contacto {
+  }
+  .Perfumes__Container__Item {
+    background-color: #333;
+    width: 100%;
+  }
+  .filtros__genero {
+    label {
+      color: v.$SmokeWhite;
+    }
+  }
+
+  .Form__Login {
+    color: v.$SmokeWhite;
+    fieldset {
+      border: 1px solid v.$SmokeWhite;
+
+      input {
+        background-color: #333;
+        border: 1px solid #333;
+      }
+    }
+  }
+
+  .Form__CrearProducto {
+    fieldset {
+      color: v.$SmokeWhite;
+      border: 1px solid v.$SmokeWhite;
+    }
+    label {
+      color: v.$SmokeWhite;
+    }
+    input {
+      color: #333;
+    }
+  }
+
+  .User {
+    .User__Container {
+      border: 1px solid v.$SmokeWhite;
+      .User__Container__Icon {
+        background-color: v.$SmokeWhite;
+        p {
+          color: v.$DarkRoyalBlue;
+        }
+        .User__Container__IconAccount {
+          filter: invert(0%);
+          width: 4rem;
+        }
+      }
+    }
+  }
+
+  .Producto {
+    .Producto__Imagenes {
+      .Producto__Imagenes__Principal {
+        border: 1px solid v.$SmokeWhite;
+      }
+    }
+  }
+  .Carrito {
+    .Carrito__Container {
+      border: 1px solid v.$SmokeWhite;
+    }
+  }
+  .Producto__texto {
+    .Producto__texto--Logo {
+      img {
+        filter: invert(100%);
+      }
+    }
+  }
+}

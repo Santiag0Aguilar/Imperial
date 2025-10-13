@@ -1,0 +1,55 @@
+@use "global/var" as v;
+@use "global/mixins" as m;
+
+.Perfumes {
+  margin-top: 5rem;
+  h2 {
+    text-align: center;
+  }
+}
+.Perfumes__Container {
+  @include m.grid(2, 2rem);
+  @include m.desktop {
+    @include m.grid(3, 2rem);
+  }
+}
+.precio {
+  color: v.$Green;
+  font-weight: 700;
+}
+
+.Perfumes__Container__Item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .Perfumes__Container__Item__Imagen {
+    img {
+      height: 20rem;
+    }
+  }
+}
+.Perfumes__Container__Order__Item {
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 2rem;
+}
+.Perfumes__Container__Item {
+  background-color: #eee;
+}
+
+.filtros {
+  .filtros__genero {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    label {
+      border-radius: 100%;
+    }
+  }
+}
+
+.filter__active {
+  @include m.desktop {
+    opacity: 0;
+  }
+}

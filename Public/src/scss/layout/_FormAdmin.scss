@@ -1,0 +1,41 @@
+@use "global/var" as v;
+@use "global/mixins" as m;
+
+.imagen-input {
+  margin-bottom: 10px;
+}
+
+.imagen-input label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.preview-container img {
+  width: 100px;
+  margin: 5px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.Form__CrearProducto {
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  input,
+  textarea {
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #333;
+  }
+  select {
+    padding: 1rem;
+  }
+
+  .AddImage {
+    width: 10rem;
+  }
+}

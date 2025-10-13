@@ -1,0 +1,34 @@
+@use "global/normalize";
+@use "global/global";
+@use "global/mixins";
+@use "global/var";
+@use "global/botones";
+// Path: Public/src/scss/layout/_header.scss
+
+@use "layout/header";
+@use "layout/nosotros";
+@use "layout/contacto";
+@use "layout/swiper";
+@use "layout/favoritos";
+@use "layout/publicidad";
+@use "layout/footer";
+@use "layout/barras";
+@use "layout/darkmode";
+@use "layout/contactoPage";
+@use "layout/ubicacion";
+@use "layout/perfumes";
+@use "layout/NoUi";
+@use "layout/filtros";
+@use "layout/PerfumesGrid";
+@use "layout/formLogin";
+@use "layout/alertas";
+@use "layout/usuario";
+@use "layout/DashBoard";
+@use "layout/FormAdmin";
+@use "layout/UserPage";
+@use "layout/ProductoDetalle";
+@use "layout/ShoppingCar";
+@use "layout/Carrito";
+@use "layout/FormToken";
+@use "layout/Pago";
+@use "layout/Direccion";

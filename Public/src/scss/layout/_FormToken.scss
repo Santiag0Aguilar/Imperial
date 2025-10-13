@@ -1,0 +1,22 @@
+@use "global/var" as v;
+@use "global/mixins" as m;
+
+.formConfirmarToken {
+  margin-top: 4rem;
+  .formConfirmarToken__Inputs {
+    fieldset {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      h2 {
+        text-align: center;
+      }
+      label {
+      }
+      input {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

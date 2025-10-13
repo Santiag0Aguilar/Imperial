@@ -1,0 +1,90 @@
+@use "global/var" as v;
+@use "global/mixins" as m;
+.footer {
+  background-color: v.$DarkRoyalBlue;
+  margin-top: 10rem;
+  padding: 4rem;
+  .footer__container {
+    h3 {
+      text-transform: uppercase;
+      font-size: 2rem;
+    }
+    p {
+      font-weight: 200;
+    }
+    color: v.$SmokeWhite;
+    @include m.desktop {
+      @include m.grid(3, 2rem);
+    }
+  }
+}
+
+.footer__horarios {
+  .footer__horarios__info {
+    .footer__horarios__info__whatsapp {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      img {
+        width: 3rem;
+      }
+    }
+  }
+}
+
+.footer_informacion {
+  .footer__informacion__lista {
+    font-weight: 200;
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.footer__envios {
+  .footer__envios__info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    img {
+      filter: invert(100%);
+
+      width: 6rem;
+    }
+  }
+}
+
+.footer__redes {
+  .footer__redes__info {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    .footer__red {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      img {
+        width: 3rem;
+      }
+    }
+  }
+}
+
+.footer__metodospago {
+  @include m.grid(2, 2rem);
+  img {
+    width: 12rem;
+  }
+}
+
+.derechos__footer {
+  color: v.$SmokeWhite;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer__box {
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,33 @@
+@use "global/var" as v;
+@use "global/mixins" as m;
+
+.Nosotros {
+  h2 {
+    text-align: center;
+  }
+
+  .Nosotros__Informcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    @include m.desktop {
+      flex-direction: row;
+    }
+    .Nosotros_ContenedorInfo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin-top: 4rem;
+      gap: 2rem;
+      h3 {
+        text-align: center;
+      }
+      img {
+        width: 10rem;
+        filter: invert(100%);
+      }
+    }
+  }
+}

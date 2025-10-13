@@ -1,0 +1,21 @@
+@use "global/var" as v;
+@use "global/mixins" as m;
+
+.Header__Carrito {
+  position: relative;
+  display: flex;
+
+  img {
+    width: 10rem;
+    height: 6rem;
+    filter: invert(100%);
+  }
+  .shoppingCar__Cantidad {
+    position: absolute;
+    left: 4.5rem;
+    top: 1.7rem;
+    .shoppingCar__Cantidad--texto {
+      font-size: 1.4rem;
+    }
+  }
+}

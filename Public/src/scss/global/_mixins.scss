@@ -1,0 +1,54 @@
+@use "global/var" as v;
+@use "sass:color";
+
+@mixin telefono {
+  @media (min-width: v.$telefono) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: v.$tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: v.$desktop) {
+    @content;
+  }
+}
+
+@mixin desktopXL {
+  @media (min-width: v.$desktopXL) {
+    @content;
+  }
+}
+
+@mixin grid($colums, $gap) {
+  grid-template-columns: repeat($colums, 1fr);
+  gap: $gap;
+  display: grid;
+}
+
+@mixin fondo {
+  background-image: url(../../../build/img/bg3.jpg); /* Corregir ubicacion de archivo cuando se suba */
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+@mixin btn($bg, $color, $display) {
+  background-color: $bg;
+  padding: 1rem;
+  color: $color;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 1rem;
+  text-align: center;
+  display: $display;
+  &:hover {
+    background-color: color.scale($bg, $lightness: -20%);
+    cursor: pointer;
+  }
+}

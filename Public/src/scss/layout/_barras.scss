@@ -1,0 +1,28 @@
+@use "global/var" as v;
+@use "global/mixins" as m;
+.mobileversion {
+  width: 3rem;
+  @include m.desktop {
+    display: none;
+  }
+}
+
+.Header__Nav {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: visibility 0.3s ease-in-out, opacity 0.5s linear,
+    height 0.5s linear;
+
+  &.Active {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+  }
+  transition: visibility 0.3s ease-in-out, opacity 0.5s linear,
+    height 0.5s linear;
+  @include m.desktop {
+    opacity: 1;
+    visibility: visible;
+  }
+}

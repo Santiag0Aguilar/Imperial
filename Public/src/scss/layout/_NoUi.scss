@@ -1,0 +1,27 @@
+@use "global/var" as v;
+@use "global/mixins" as m;
+
+.noUi-target {
+  height: 1rem;
+  width: 20rem;
+}
+
+.noUi-horizontal .noUi-handle {
+  height: 25px;
+}
+
+.noUi-horizontal .noUi-tooltip {
+  height: 3rem;
+}
+
+.noUi-horizontal .noUi-tooltip {
+  opacity: 0;
+}
+
+.noUi-connect {
+  background-color: v.$DarkRoyalBlue;
+}
+
+#rango-precio {
+  color: v.$Green;
+}

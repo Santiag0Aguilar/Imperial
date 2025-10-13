@@ -1,0 +1,62 @@
+@use "global/var" as v;
+@use "global/mixins" as m;
+
+.Producto {
+  .Producto__Imagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    .Producto__Imagenes__Principal {
+      margin-top: 4rem;
+      border: 1px solid v.$Green;
+      img {
+        width: 30rem;
+        height: 30rem;
+        object-fit: cover;
+        transition: opacity 0.4s ease-in-out;
+      }
+    }
+    .Producto__Imagenes__Secundarias {
+      display: flex;
+      gap: 2rem;
+      width: 10rem;
+      justify-content: center;
+      img {
+        &:hover {
+          cursor: pointer;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .Producto__texto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    .Producto__texto--Logo {
+      display: flex;
+      align-items: center;
+      img {
+        width: 15rem;
+        height: 15rem;
+      }
+      margin-bottom: 4rem;
+    }
+    .Producto__texto--Marca {
+      margin-bottom: 2rem;
+    }
+    .precio {
+      font-size: 3rem;
+    }
+    .descripcion {
+      margin-bottom: 4rem;
+    }
+    .Producto__texto__datos {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

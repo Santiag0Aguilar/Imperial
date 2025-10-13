@@ -1,0 +1,12 @@
+<?php foreach ($productos as $producto): ?>
+    <div>
+        <p>Producto <?php echo $producto["NombreProducto"] ?></p>
+        <p>precio<?php echo $producto["Precio"] ?></p>
+        <a href="/Perfumeria/Admin/AdminAcciones/actualizar.php?id=<?php echo $producto['Id'] ?>">Actualizar</a>
+        <form method="POST">
+            <input type="submit" value="Eliminar" name="eliminar">
+            <input type="hidden" name="id" value="<?php echo $producto['Id'] ?>">
+        </form>
+    </div>
+    <br>
+<?php endforeach; ?>

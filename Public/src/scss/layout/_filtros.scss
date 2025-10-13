@@ -1,0 +1,11 @@
+@use "global/var" as v;
+@use "global/mixins" as m;
+
+.filtros {
+}
+
+.filtros__precio {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

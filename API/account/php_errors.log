@@ -1,0 +1,2 @@
+[23-Jun-2025 19:09:31 UTC] PHP Warning:  Undefined array key "CorreoAsociado" in C:\apache\htdocs\Perfumeria\API\account\VerificarTokenAPI.php on line 34
+[23-Jun-2025 19:09:31 UTC] PHP Warning:  Undefined array key "rol" in C:\apache\htdocs\Perfumeria\API\account\VerificarTokenAPI.php on line 35

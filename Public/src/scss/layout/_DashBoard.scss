@@ -1,0 +1,63 @@
+@use "global/var" as v;
+@use "global/mixins" as m;
+.Tablas {
+  margin-top: 4rem;
+}
+table {
+  text-align: center;
+  border-spacing: 0;
+  width: 70%;
+  thead {
+    background-color: v.$DarkRoyalBlue;
+    padding: 1rem;
+    color: v.$SmokeWhite;
+    tr {
+      th {
+        padding: 1.5rem;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      margin-bottom: 1rem;
+      td {
+        font-weight: bold;
+        form {
+          margin-bottom: 1rem;
+          input {
+            margin: 2rem;
+          }
+        }
+        img {
+          height: 34px;
+          width: 34px;
+        }
+
+        svg {
+          height: 64px;
+          width: 64px;
+        }
+
+        img,
+        svg {
+          display: inline;
+        }
+      }
+    }
+  }
+}
+
+.BotonDelete {
+  @include m.btn(v.$Red, v.$SmokeWhite, inline);
+  border: none;
+}
+
+.BotonUpdate {
+  @include m.btn(v.$DarkRoyalBlue, v.$SmokeWhite, inline);
+}
+
+.Botones-Admin {
+  display: flex;
+  flex-direction: column;
+}

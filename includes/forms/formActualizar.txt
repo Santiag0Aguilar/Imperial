@@ -1,0 +1,41 @@
+<form method="POST" enctype="multipart/form-data">
+
+    <fieldset>
+        <legend>Producto</legend>
+
+        <label for="nombre">Nombre:</label>
+        <input name="nombre" type="text" id="nombre" placeholder="Nombre del producto" value="<?php echo htmlspecialchars($producto["NombreProducto"]); ?>">
+
+        <label for="precio">Precio:</label>
+        <input name="precio" type="number" placeholder="Ej. 1500.00" id="precio" value="<?php echo htmlspecialchars($producto["Precio"]); ?>"" step=" 0.01" min="0">
+
+        <label for="Descripcion">Descripcion:</label>
+        <textarea name="Descripcion" id="Descripcion" placeholder="Descripción del producto"><?php echo htmlspecialchars($producto["Descripcion"]); ?></textarea>
+        <label for="imagenes[]">Imágenes del producto:</label>
+        <input type="file" name="imagenes[]" accept="image/png, image/jpeg">
+
+        <div id="contenedor-imagenes">
+            <?php foreach ($MostrarImagenes as $imagen): ?>
+                <div class="imagen-producto">
+                    <img src="<?php echo $imagen["ruta_imagen"] ?>" alt="imagen" width="100" height="100">
+
+                </div>
+            <?php endforeach; ?>
+        </div>
+
+        <button type="button" onclick="agregarCampoImagen()">+ Añadir otra imagen</button>
+    </fieldset>
+    <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+    <input type="submit" value="Guardar Producto">
+</form>
+
+<script>
+    function agregarCampoImagen() {
+        const contenedor = document.getElementById("contenedor-imagenes");
+        const nuevoInput = document.createElement("input");
+        nuevoInput.type = "file";
+        nuevoInput.name = "imagenes[]";
+        nuevoInput.accept = "image/png, image/jpeg";
+        contenedor.appendChild(nuevoInput);
+    }
+</script>
